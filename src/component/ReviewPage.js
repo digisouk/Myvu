@@ -352,12 +352,12 @@ export default function ReviewPage() {
               variant="outlined"
               margin="normal"
               required
-              width="21.4vw"
               defaultValue="iPhone XS 128 GB"
               name="password"
               type="name"
               id="name"
               className="city"
+              style={{width:"21.4vw"}}
               
             /> 
             </div>
