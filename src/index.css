@@ -1,0 +1,849 @@
+body {
+  margin: 0;
+  font-family:'CircularStd-Book' !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+h1,h2,h3,h4,h5,h6,div,p,Typography,span{
+  font-family:'CircularStd-Book' !important;
+}
+/* font face */
+@font-face {
+  font-family:'CircularStd-Book' !important;
+  src: local('CircularStd-Book.otf'), url('CircularStd-Book.otf') format('opentype') !important;
+}
+
+.App {
+  text-align: center;
+}
+a{
+  color: #000;
+  left: 0;
+  text-decoration: none !important;
+}
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #ececec !important;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.sign_pg{
+  position: relative;
+  bottom: 30px;
+  color: #000 !important;
+  font-weight:795 !important;
+  left: 40%;
+}
+.accnm{
+  position: relative;
+  right: 34%;
+}
+.wrdsgl{
+  position: relative;
+  right: 39%;
+}
+.ot{
+  position: relative;
+  right: 40%;
+}
+.paper {
+  margin: 110px 110px 0 !important;
+}
+.smimg{
+  padding-top: 100px;
+  max-width: 50%;
+}
+.otpbox{
+  display: flex;
+  flex-direction: row-reverse;
+  position: relative;
+  right: 20px;
+  width: 60px !important;
+  padding-right: 5px !important;
+}
+TextField:focus {
+  outline: none;
+}
+.fstnm{
+  position: relative;
+  right: 85px;
+}
+.sndnm{
+  position: absolute;
+  left: 170px;
+  bottom: 80px;
+  direction: row;
+}
+
+.submit{
+  position: absolute;
+  bottom: 50px;
+  right: 10px;
+}
+.box{
+  box-shadow: 0px 2px #3026b9 !important;
+}
+.sign{
+  position: relative;
+  bottom: 30px;
+  color: #000 !important;
+  font-weight:795 !important;
+  left: 40%;
+}
+.accn{
+  position: relative;
+  right: 22%;
+}
+.wrdsg{
+  position: relative;
+  right: 40%;
+}
+.ot{
+  position: relative;
+  right: 40%;
+}
+.paper {
+  margin: 110px 110px 0 !important;
+}
+.smimg{
+  padding-top: 100px;
+  max-width: 50%;
+}
+.otpbox{
+  display: flex;
+  flex-direction: row-reverse;
+  position: relative;
+  right: 20px;
+  width: 60px !important;
+  padding-right: 5px !important;
+}
+TextField:focus {
+  outline: none;
+}
+.fstnm{
+  position: relative;
+  right: 85px;
+}
+.sndnm{
+  position: absolute;
+  left: 170px;
+  bottom: 80px;
+  direction: row;
+}
+body {
+  margin: 0;
+  font-family:'CircularStdBold-Regular';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #908d8d59 !important;
+}
+.MuiTypography-displayBlock {
+  display: block;
+  font-family: 'CircularStdBold-Regular' !important;
+  font-size: smaller !important;
+}
+.MuiTypography-body1{
+  line-height: 1.2 !important;
+}
+
+code {
+  font-family: 'CircularStdBold-Regular';
+}
+.MuiAppBar-colorPrimary{
+  background-color: #1473e6 !important;
+}
+.word{
+  color: #1473e6 !important;
+}
+.MuiListItem-root MuiListItem-gutters {
+  display: flow-root !important;
+}
+
+h2{
+  margin: 10px !important;
+}
+/*== demo styles ==*/
+body {
+  font-family:'CircularStdBold-Regular';
+  font-weight: 100;
+  letter-spacing: 2px;
+}
+
+.box-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box-wrapper > div {
+  margin: 20px;
+  border: 1px solid #ccc;
+  color: #999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex: 1 0 21%;
+  line-height: 1.4em;
+  height: 100px;
+  background-color: #1473e6;
+  opacity:75%;
+}
+
+/*== box-shadow styles ==*/
+
+/*== outer box-shadow styles ==*/
+
+.shadow-top {
+  box-shadow: 0 -5px 5px -5px #333;
+}
+
+.shadow-right {
+  box-shadow: 5px 0 5px -5px #333;
+}
+
+.shadow-bottom {
+  box-shadow: 0 5px 5px -5px #333;
+}
+
+.shadow-left {
+  box-shadow: -5px 0 5px -5px #333;
+}
+
+.shadow-left-right {
+  box-shadow: -5px 0 5px -5px #333, 
+              5px 0 5px -5px #333;
+}
+
+.shadow-top-bottom {
+  box-shadow: 0 -5px 5px -5px #333, 
+              0 5px 5px -5px #333;
+}
+
+.shadow-top-right {
+  box-shadow: 5px -5px 5px -5px #333;
+}
+
+.shadow-top-left {
+  box-shadow: -5px -5px 5px -5px #333;
+}
+
+.shadow-bottom-right {
+  box-shadow: 5px 5px 5px -5px #333;
+}
+
+.shadow-bottom-left {
+  box-shadow: -5px 5px 5px -5px #333;
+}
+
+.shadow-top-bottom-right {
+  box-shadow: 0 -5px 5px -5px #333, 
+              0 5px 5px -5px #333, 
+              5px 0 5px -5px #333;
+}
+
+.shadow-top-bottom-left {
+  box-shadow: 0 -5px 5px -5px #333, 
+              0 5px 5px -5px #333, 
+              -5px 0 5px -5px #333;
+}
+
+.shadow-top-left-right {
+  box-shadow: 0 -5px 5px -5px #333,
+              -5px 0 5px -5px #333, 
+              5px 0 5px -5px #333;
+}
+
+.shadow-bottom-left-right {
+  box-shadow: 0 5px 5px -5px #333,
+              -5px 0 5px -5px #333, 
+              5px 0 5px -5px #333;
+}
+
+.shadow-all {
+  box-shadow: 0 0 5px #333;
+}
+
+/*== inner box-shadow styles ==*/
+
+.shadow-inset-top {
+  box-shadow: inset 0 5px 5px -5px #333;
+}
+
+.shadow-inset-right {
+  box-shadow: inset -5px 0 5px -5px #333;
+}
+
+.shadow-inset-bottom {
+  box-shadow: inset 0 -5px 5px -5px #333;
+}
+
+.shadow-inset-left {
+  box-shadow: inset 5px 0 5px -5px #333;
+}
+
+.shadow-inset-left-right {
+  box-shadow: inset -5px 0 5px -5px #333, 
+              inset 5px 0 5px -5px #333;
+}
+
+.shadow-inset-top-bottom {
+  box-shadow: inset 0 5px 5px -5px #333, 
+              inset 0 -5px 5px -5px #333;
+}
+
+.shadow-inset-top-right {
+  box-shadow: inset -5px 5px 5px -5px #333;
+}
+
+.shadow-inset-top-left {
+  box-shadow: inset 5px 5px 5px -5px #333;
+}
+
+.shadow-inset-bottom-right { 
+  box-shadow: inset -5px -5px 5px -5px #333;
+}
+
+.shadow-inset-bottom-left { 
+  box-shadow: inset 5px -5px 5px -5px #333;
+}
+
+.shadow-inset-top-bottom-right {
+  box-shadow: inset 0 -5px 5px -5px #333, 
+              inset 0 5px 5px -5px #333, 
+              inset -5px 0 5px -5px #333;
+}
+
+.shadow-inset-top-bottom-left {
+  box-shadow: inset 0 -5px 5px -5px #333, 
+              inset 0 5px 5px -5px #333, 
+              inset 5px 0 5px -5px #333;
+}
+
+.shadow-inset-top-left-right {
+  box-shadow: inset 0 5px 5px -5px #333,
+              inset -5px 0 5px -5px #333, 
+              inset 5px 0 5px -5px #333;
+}
+
+.shadow-inset-bottom-left-right {
+  box-shadow: inset 0 -5px 5px -5px #333,
+              inset -5px 0 5px -5px #333, 
+              inset 5px 0 5px -5px #333;
+}
+
+.shadow-inset-all {
+  box-shadow: inset 0 0 5px #333;
+}
+
+
+.card {
+  background: #fff;
+  border-radius: 2px;
+  display: inline-block;
+  height: 300px;
+  margin: 1rem;
+  overflow: visible;
+  position: relative;
+  width:90%;
+}
+.card-3 {
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+.card-1 {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+
+.sig{
+  position: relative;
+  bottom: 38px;
+  left: 130px;
+  color: #000 !important;
+  font-weight:795 !important;
+}
+.acc{
+  position: relative;
+  right: 35%;
+}
+.wrdsg{
+  position: relative;
+  right: 41%;
+}
+.paper {
+  margin: 120px 120px 0 !important;
+}
+.smimg{
+  padding-top: 100px;
+  width: 50%;
+}
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/*profile*/
+
+.react-swipeable-view-container{
+  height: 37vw;
+}
+
+/*dash1*/
+h1,
+p {
+  font-family: "CircularStd-Book";
+}
+.card {
+  background: #fff;
+  border-radius: 2px;
+  display: inline-block;
+  height: 300px;
+  margin: 1rem;
+  position: relative;
+  width: 500px;
+  min-height: 95%;
+}
+
+.one_side_box{
+  position: relative;
+  right: 30%;
+}
+.one_rate{
+  position: relative;
+  right: 12%;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+.App1 {
+  padding: 1rem;
+}
+.App2{
+  padding: 1rem;
+  line-height: 1.6;
+}
+.star {
+  display: flex;
+  padding: 0;
+}
+.star li {
+  color: rgb(255, 230, 0);
+  list-style: none;
+}
+#s {
+  float: right;
+  flex-direction: row;
+}
+
+.p {
+  color: gray;
+}
+.snd_rate_box{
+  position: relative;
+  right: 50%;
+}
+.box_fotter{
+width: 80vw;
+position: relative;
+left: 190px;
+
+}
+.ratings .fa-star {
+  color: rgb(255, 230, 0);
+  padding-left: 5px;
+}
+
+progress {
+  width: 80%;
+  margin: 0 10px;
+  padding: 20px;
+}
+
+.rating-bar {
+  display: flex;
+  align-items: center;
+}
+@media only screen and (max-width: 900px) {
+  .c1 {
+    width: 100%;
+  }
+  .c2 {
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .c1 {
+    flex-wrap: wrap;
+  }
+  .card .card-4 {
+    width: 150%;
+  }
+
+  .c2 {
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .c1 {
+    width: 150%;
+    flex-wrap: wrap;
+  }
+  .c2 {
+    flex-direction: column;
+  }
+}
+.dash_box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.name_cat {
+  flex: 0.35;
+  padding: 15px;
+}
+
+.firstline_box{
+  display: flex;
+}
+.cat_img {
+  width: 5vw;
+}
+.Category_box {
+  display: flex;
+}
+
+.full_ava {
+  display: flex;
+}
+.ava_img {
+  border-radius: 50%;
+  width: 100px;
+}
+.time {
+  color: gray;
+  padding-right: 35px;
+}
+.name_ava {
+  padding: 20px;
+}
+
+.fav_iconprd1 {
+  color: red;
+  width: 90% !important;
+  padding-left:55%;
+}
+.fav_icon_numprd1 {
+  position: absolute;
+  right: 8.5%;
+  top: 20px;
+}
+.para_nameprd1 {
+  padding-right: 88%;
+  line-height: 2;
+}
+
+.cmt_iconprd1{
+ position: relative;
+ right: 450%;
+ color: black !important;
+ margin-bottom: 10px;
+
+}
+.dash_box:hover{
+  text-decoration: none !important;
+}
+link:hover{
+  text-decoration: none !important;
+}
+/*Dash2*/
+.btn_dash {
+  display: flex;
+  flex-direction: row;
+  padding-left: 200px;
+  padding-top: 25px;
+  padding-bottom: 20px;
+}
+.view_btn,
+.btn_rate,
+.fsr_btn_view {
+  padding-right: 50px;
+}
+.readmore_link,
+.readmore_linkprd1{
+  position: relative;
+  left: 0;
+}
+.App {
+  font-family:'CircularStdBold-Regular';
+  text-align: center;
+}
+.dash_box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.name_cat {
+  flex: 0.35;
+  padding: 15px;
+}
+.cat_img {
+  width: 5vw;
+}
+.Category_box {
+  display: flex;
+}
+
+.full_ava {
+  display: flex;
+}
+.ava_img {
+  border-radius: 50%;
+  width: 100px;
+}
+.time {
+  color: gray;
+  padding-right: 35px;
+}
+.name_ava {
+  padding: 20px;
+}
+.fav_iconprd2{
+  color: red;
+  width: 90% !important;
+  padding-left:55%;
+}
+.fav_icon_numprd2{
+  position: absolute;
+  right: 10%;
+  top: 10px;
+}
+
+.para_nameprd2{
+  padding-right: 88%;
+  line-height: 2;
+}
+
+.cmt_iconprd2{
+ position: relative;
+ right: 8%;
+
+}
+.dash_box-prd2{
+  width: 83vw;
+  position: relative;
+  left: 150px;
+}
+
+.secnd_dash_box {
+  background-image: url("https://bestseling.in/wp-content/uploads/2020/07/best-trimmer-for-men-under-1500-2.jpg");
+}
+/*dash3*/
+.fav_iconprd3{
+  color: red;
+  width: 90% !important;
+  padding-left:55%;
+}
+.fav_icon_numprd3{
+  position: absolute;
+  right: 10%;
+  top: 10px;
+}
+
+.para_nameprd3{
+  padding-right: 88%;
+  line-height: 2;
+}
+
+.cmt_iconprd3{
+ position: relative;
+ right: 7%;
+
+}
+.dash_box-prd3{
+  width: 83vw;
+  position: relative;
+  left: 150px;
+}
+
+/*Accordion*/
+.MuiAccordionDetails-root{
+  display: flow-root !important;
+}
+.MuiAccordionSummary-expandIcon.Mui-expanded{
+  background-color: #1473e6 !important;
+  position: relative;
+  right: 10px;
+}
+.MuiAccordionSummary-expandIcon{
+  background-color: #c0b2b2 !important;
+  position: relative;
+  right: 10px;
+}
+
+.MuiAccordionSummary-root{
+  background-color:#908d8d59  !important;
+}
+.MuiAccordionSummary-root.Mui-expanded{
+  background-color: white !important;
+}
+.MuiIconButton-label{
+  color: #fff;
+}
+/*navbar*/
+.wrdlog{
+  position: relative;
+  left:45%;
+  color: white !important;
+}
+.icon{
+  position:relative; 
+  left:50%;
+}
+@media (max-width:1200px){
+  .wrdlog{
+    position: relative;
+    left:40%;
+    color: white !important;
+  }
+  .icon{
+    position:relative; 
+    left:45%;
+  }
+}
+@media (max-width:900px){
+  .wrdlog{
+    position: relative;
+    left:39%;
+    color: white !important;
+  }
+  .icon{
+    position:relative; 
+    left:44%;
+  }
+}
+@media (max-width:700px){
+  .wrdlog{
+    position: relative;
+    left:35%;
+    color: white !important;
+  }
+  .icon{
+    position:relative; 
+    left:37%;
+  }
+}
+@media (max-width:400px){
+  .wrdlog{
+    position: relative;
+    left:30%;
+    color: white !important;
+  }
+  .icon{
+    position:relative; 
+    left:26.8%;
+  }
+}
+
+
+

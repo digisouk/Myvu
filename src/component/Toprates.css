@@ -1,0 +1,32 @@
+
+.mainim2{
+    width: 90%;
+    position: relative;
+    
+}
+.a_toplink{
+    text-decoration: none;
+    position: relative;
+    left: 50%;
+}
+.MuiSvgIcon-root{
+    font-size: small !important;
+}
+.james{
+    color: gray;
+}
+.cont_top{
+    position: relative;
+}
+.full_view{
+    display: flex;
+    justify-content: space-evenly;
+}
+.name_blade_top{
+    position: relative;
+    left: 10px;
+    text-align: initial !important;
+    font-family:'CircularStd-Book' !important;
+    font-weight: 600;
+    font-size: 17px;
+}

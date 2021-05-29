@@ -1,0 +1,28 @@
+.cont{
+    background-image:url('../component/img/Trimmer.jpeg');
+    border-radius: 10px;
+    width: 21vh;
+    height: 8vh;
+    background-repeat: no-repeat;
+    background-size: 200px 75px;
+    font-family:'CircularStd-Book' !important;
+}
+
+.ele{
+    width: 21vh;
+    height: 8vh;
+    border-radius: 10px;
+    background-color: rgba(30, 101, 245, 0.5);
+    color: white !important;
+    align-items: center;
+}
+.a_ele{
+    color: white;
+    position: relative;
+    left: 2%;
+    padding-top: 11px;
+    text-decoration: none !important;
+}
+.a_ele:hover{
+    color: black;
+}

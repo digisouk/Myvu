@@ -1,0 +1,5 @@
+/* font face */
+@font-face {
+    font-family:'CircularStd-Book' !important;
+    src: local('CircularStd-Book.otf'), url('CircularStd-Book.otf') format('opentype') !important;
+  }
