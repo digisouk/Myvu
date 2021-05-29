@@ -21,6 +21,7 @@
 .full_view{
     display: flex;
     justify-content: space-evenly;
+    padding-top: 10px;
 }
 .name_blade_top{
     position: relative;

@@ -6,8 +6,9 @@
 }
 .a_mostlink{
     text-decoration: none;
-    position: relative;
-    left: 50%;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
 }
 .MuiSvgIcon-root{
     font-size: small !important;
@@ -22,6 +23,7 @@
 .full_view{
     display: flex;
     justify-content: space-evenly;
+    padding-top: 10px;
     
 }
 .name_blade{

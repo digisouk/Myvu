@@ -14,10 +14,10 @@ export default function ToprateBox() {
       <Box >
           <Paper style={{padding:'0', boxShadow:"none",fontFamily:'sans-serif', fontWeight:'600', fontSize:'20px'}}>
               <Box p={10}>
-                  <div style={{position:"relative", right:"48%"}}>
-                  Top Rated
-                  </div>
-                <a className="a_toplink" href="#"> View all <ArrowForwardIosIcon/> </a>
+              <div className="a_mostlink" >
+              Top Rated
+                <a  href="#"> View all <ArrowForwardIosIcon/> </a>
+                </div>
                 <div className="full_view">
               <div className="cont_top">
               <NavLink to="/product1">
@@ -26,7 +26,10 @@ export default function ToprateBox() {
               <div className="name_blade_top">
                <div>Philips One Blade</div>   
                <div className="james">James Charles</div>
-               <Rating name="half-rating" defaultValue={2.5} precision={0.5} />
+               <div style={{display:"flex", flexDirection:"row"}}>
+               <Rating name="half-rating" defaultValue={2.5} precision={0.5}  readOnly/>
+                <h6 style={{lineHeight:"1"}}>4.0</h6>
+               </div>
                </div>
                 </div> 
 
@@ -37,7 +40,10 @@ export default function ToprateBox() {
               <div className="name_blade_top">
                <div>Philips One Blade</div>   
                <div className="james">James Charles</div>
-               <Rating name="half-rating" defaultValue={2.5} precision={0.5} />
+               <div style={{display:"flex", flexDirection:"row"}}>
+               <Rating name="half-rating" defaultValue={2.5} precision={0.5}  readOnly/>
+                <h6 style={{lineHeight:"1"}}>4.0</h6>
+               </div>
                </div>
                 </div> 
 
@@ -48,7 +54,10 @@ export default function ToprateBox() {
               <div className="name_blade_top">
                <div>Philips One Blade</div>   
                <div className="james">James Charles</div>
-               <Rating name="half-rating" defaultValue={2.5} precision={0.5} />
+               <div style={{display:"flex", flexDirection:"row"}}>
+               <Rating name="half-rating" defaultValue={2.5} precision={0.5}  readOnly/>
+                <h6 style={{lineHeight:"1"}}>4.0</h6>
+               </div>
                </div>
                 </div> 
 
@@ -59,7 +68,10 @@ export default function ToprateBox() {
               <div className="name_blade_top">
                <div>Philips One Blade</div>   
                <div className="james">James Charles</div>
-               <Rating name="half-rating" defaultValue={2.5} precision={0.5} />
+               <div style={{display:"flex", flexDirection:"row"}}>
+               <Rating name="half-rating" defaultValue={2.5} precision={0.5}  readOnly/>
+                <h6 style={{lineHeight:"1"}}>4.0</h6>
+               </div>
                </div>
                 </div> 
 
@@ -70,7 +82,10 @@ export default function ToprateBox() {
               <div className="name_blade_top">
                <div>Philips One Blade</div>   
                <div className="james">James Charles</div>
-               <Rating name="half-rating" defaultValue={2.5} precision={0.5} />
+               <div style={{display:"flex", flexDirection:"row"}}>
+               <Rating name="half-rating" defaultValue={2.5} precision={0.5}  readOnly/>
+                <h6 style={{lineHeight:"1"}}>4.0</h6>
+               </div>
                </div>
                 </div> 
 
@@ -81,7 +96,10 @@ export default function ToprateBox() {
               <div className="name_blade_top">
                <div>Philips One Blade</div>   
                <div className="james">James Charles</div>
-               <Rating name="half-rating" defaultValue={2.5} precision={0.5} />
+               <div style={{display:"flex", flexDirection:"row"}}>
+               <Rating name="half-rating" defaultValue={2.5} precision={0.5}  readOnly/>
+                <h6 style={{lineHeight:"1"}}>4.0</h6>
+               </div>
                </div>
                 </div> 
                 </div>

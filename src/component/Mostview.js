@@ -13,13 +13,12 @@ export default function MostviewBox() {
   return (
       
       <Box>
-          <Paper style={{padding:'0', boxShadow:"none", fontFamily:'sans-serif', fontWeight:'600', fontSize:'20px'}}>
+          <Paper style={{padding:'0', boxShadow:"none", fontWeight:'600', fontSize:'20px'}}>
               <Box p={10}>
-                  <div style={{position:"relative", right:"48%"}}>
+                <div className="a_mostlink" >
                   Most Viewed
-                  </div>
-                <a className="a_mostlink" href="#"> View all <ArrowForwardIosIcon/> </a>
-                
+                <a  href="#"> View all <ArrowForwardIosIcon/> </a>
+                </div>
                 <div className="full_view">
                 
               <div className="cont_most">
@@ -29,7 +28,10 @@ export default function MostviewBox() {
               <div className="name_blade">
                <div>Philips One Blade</div>   
                <div className="james">James Charles</div>
-               <Rating name="half-rating" defaultValue={2.5} precision={0.5} />
+               <div style={{display:"flex", flexDirection:"row"}}>
+               <Rating name="half-rating" defaultValue={2.5} precision={0.5}  readOnly/>
+                <h6 style={{lineHeight:"1"}}>4.0</h6>
+               </div>
                </div>
                 </div> 
               <div className="cont_most">
@@ -39,7 +41,10 @@ export default function MostviewBox() {
               <div className="name_blade">
                <div>Philips One Blade</div>   
                <div className="james">James Charles</div>
-               <Rating name="half-rating" defaultValue={2.5} precision={0.5} />
+               <div style={{display:"flex", flexDirection:"row"}}>
+               <Rating name="half-rating" defaultValue={2.5} precision={0.5}  readOnly/>
+                <h6 style={{lineHeight:"1"}}>4.0</h6>
+               </div>
                </div>
                 </div> 
                 
@@ -51,7 +56,10 @@ export default function MostviewBox() {
               <div className="name_blade">
                <div>Philips One Blade</div>   
                <div className="james">James Charles</div>
-               <Rating name="half-rating" defaultValue={2.5} precision={0.5} />
+               <div style={{display:"flex", flexDirection:"row"}}>
+               <Rating name="half-rating" defaultValue={2.5} precision={0.5}  readOnly/>
+                <h6 style={{lineHeight:"1"}}>4.0</h6>
+               </div>
                </div>
                 </div> 
 
@@ -62,7 +70,10 @@ export default function MostviewBox() {
               <div className="name_blade">
                <div>Philips One Blade</div>   
                <div className="james">James Charles</div>
-               <Rating name="half-rating" defaultValue={2.5} precision={0.5} />
+               <div style={{display:"flex", flexDirection:"row"}}>
+               <Rating name="half-rating" defaultValue={2.5} precision={0.5}  readOnly/>
+                <h6 style={{lineHeight:"1"}}>4.0</h6>
+               </div>
                </div>
                 </div> 
 
@@ -73,7 +84,10 @@ export default function MostviewBox() {
               <div className="name_blade">
                <div>Philips One Blade</div>   
                <div className="james">James Charles</div>
-               <Rating name="half-rating" defaultValue={2.5} precision={0.5} />
+               <div style={{display:"flex", flexDirection:"row"}}>
+               <Rating name="half-rating" defaultValue={2.5} precision={0.5}  readOnly/>
+                <h6 style={{lineHeight:"1"}}>4.0</h6>
+               </div>
                </div>
                 </div> 
 
@@ -84,7 +98,10 @@ export default function MostviewBox() {
               <div className="name_blade">
                <div>Philips One Blade</div>   
                <div className="james">James Charles</div>
-               <Rating name="half-rating" defaultValue={2.5} precision={0.5} />
+               <div style={{display:"flex", flexDirection:"row"}}>
+               <Rating name="half-rating" defaultValue={2.5} precision={0.5}  readOnly/>
+                <h6 style={{lineHeight:"1"}}>4.0</h6>
+               </div>
                </div>
                 </div> 
                 </div>

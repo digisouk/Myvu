@@ -48,7 +48,7 @@ const useStyles = makeStyles((theme) => ({
   root: {
     backgroundColor: theme.palette.background.paper,
     width: 500,
-    position: "absolute gi!important",
+    position: "absolute !important",
   left: "34%",
   top: "10%",
   width: "60vw",

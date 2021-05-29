@@ -21,14 +21,9 @@ const useStyles = makeStyles((theme) => ({
     backgroundSize: 'cover',
     backgroundPosition: 'center',
   },
-  paper: {
-    margin: theme.spacing(8, 4),
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-  },
+ 
   form: {
-    width: '100%', // Fix IE 11 issue.
+    width: '100%', 
    
   },
   submit: {
@@ -43,31 +38,34 @@ export default function SignInSide() {
   return (
     <Grid container component="main" className={classes.root}>
       <CssBaseline />
-      <Grid style={{backgroundColor:'#1473e6'}}item xs={false} sm={4} md={7} className={classes.image} >
-        <div><img className="smimg"src={img} alt={img}/></div>
+      <Grid style={{backgroundColor:'#1473e6'}}item xs={false} sm={6} md={6} className={classes.image} >
+        <div className="image_back"><img className="smimg"src={img} alt={img}/></div>
         </Grid>
-      <Grid item xs={12} sm={8} md={5} component={Paper} elevation={6} square>
-        <div className={classes.paper}style={{margin: "110px 120px 0"}}>
-          <Typography component="h1" variant="h5" style={{color: "#0468fa", lineHeight:"2"}} className="wrdsg">
-         LOGIN
+        {/*login */}
+      <Grid item xs={12} sm={6} md={6} component={Paper} elevation={6} square>
+        <div className="paper-login">
+          <div className="login_word">
+          <Typography component="h1" variant="h5" style={{color: "#0468fa", lineHeight:"2"}}>
+         LOGIN 
           </Typography>
-          <Typography style={{color: "grey",lineHeight:"2"}} className="accn">
+          <Typography style={{color: "grey",lineHeight:"2"}}>
           Login to Your Existing Account
           </Typography>
-          <Typography style={{color: "grey",lineHeight:"2"}} className="ot">
+          <Typography style={{color: "grey",lineHeight:"2"}}>
           Enter OTP
           </Typography>
-
+          </div>
           <form className={classes.form} noValidate>
+            <div className="otp_box-container">
           <TextField
               variant="outlined"
               margin="normal"
               required
               name="otp"
               type="name"
-              className="otpbox"
-              position="relative"
               size="small"
+              color="#0468fa"
+              className="otp-box"
             />
              <TextField
               variant="outlined"
@@ -75,8 +73,8 @@ export default function SignInSide() {
               required
               name="otp"
               type="name"
-              className="otpbox"
               size="small"
+              className="otp-box"
             />
              <TextField
               variant="outlined"
@@ -84,8 +82,8 @@ export default function SignInSide() {
               required
               name="otp"
               type="name"
-              className="otpbox"
               size="small"
+              className="otp-box"
             />
              <TextField
               variant="outlined"
@@ -93,8 +91,8 @@ export default function SignInSide() {
               required
               name="otp"
               type="name"
-              className="otpbox"
               size="small"
+              className="otp-box"
             />
              <TextField
               variant="outlined"
@@ -102,30 +100,31 @@ export default function SignInSide() {
               required
               name="otp"
               type="name"
-              className="otpbox"
               size="small"
+              className="otp-box"
             />
         
-             <TextField 
+             <TextField
               variant="outlined"
               margin="normal"
               required
               name="otp"
               type="name"
-              className="otpbox"
               size="small"
+              className="otp-box"
             />
+            </div>
             {/*name  */}
+            <div className="name_form-login">
             <TextField
               variant="outlined"
               margin="normal"
               required
-              id="email"
+              id="name"
               label="First name "
-              name="email"
-              autoComplete="email"
-              autoFocus
-              className="fstnm"
+              name="name"
+              type="name"
+              className="name-one"
             />
            
             <TextField
@@ -136,10 +135,10 @@ export default function SignInSide() {
               label="Second name"
               type="name"
               id="name"
-              className="sndnm"
+              className="name-two"
             />
-            
-           <h6>UP on sign up, a verification code will be sent to your email or phone number</h6>
+            </div>
+           <h6>upon sign up, a verification code will be sent to your email or phone number</h6>
            
             <Button
               type="submit"
@@ -153,8 +152,8 @@ export default function SignInSide() {
             
             </Button>
             
-            <Box mt={5}>
-                  <h4 style={{color: "grey"}}> Already have an account ?  <br></br> </h4>
+            <Box mt={5} className="fotter_login">
+                  <div className="already-words" style={{color: "grey"}}> Already have an account ?  </div>
                 <Link className="sign" to={`/signIn`} >SIGN IN</Link>
             </Box>
           </form>
