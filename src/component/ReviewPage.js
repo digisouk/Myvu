@@ -1,10 +1,12 @@
 import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Navbar from './NavBar'
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import Rating from "@material-ui/lab/Rating";
+import TextField from '@material-ui/core/TextField';
 import Modal from 'react-bootstrap/Modal';
+import Navbar from './NavBar'
+
 
 
 export default function ReviewPage() {
@@ -13,7 +15,8 @@ export default function ReviewPage() {
   const [lgShow, setLgShow] = useState(false);
   return (
     <div>
-    <Navbar> </Navbar>
+            <Navbar></Navbar>
+    <div>
 
      <div style={{ marginLeft: "20px", marginTop: "5%" }}>
       
@@ -25,7 +28,7 @@ export default function ReviewPage() {
       </div>
 
       <div style={{ marginTop: "20px" }}>
-        <Button variant="primary" style={{ borderRadius: "10px" }} onClick={() => setLgShow(true)}>
+        <Button variant="primary" style={{ borderRadius: "10px" }}>
           Most Viewed
         </Button>
         <Button
@@ -50,11 +53,12 @@ export default function ReviewPage() {
         </Button>
 
         <Button
-          variant="primary"
+          variant="primary" onClick={() => setLgShow(true)}
           style={{
             borderRadius: "10px",
             float: "right",
             marginRight: "85px"
+            
           }}
         >
           Add Product
@@ -84,6 +88,7 @@ export default function ReviewPage() {
                       name="half-rating"
                       defaultValue={2.5}
                       precision={0.5}
+                      readOnly
                     />
                   </div>
                 </div>
@@ -161,6 +166,7 @@ export default function ReviewPage() {
                       name="half-rating"
                       defaultValue={2.5}
                       precision={0.5}
+                      readOnly
                     />
                   </div>
                 </div>
@@ -239,6 +245,7 @@ export default function ReviewPage() {
                       name="half-rating"
                       defaultValue={2.5}
                       precision={0.5}
+                      readOnly
                     />
                   </div>
                 </div>
@@ -290,19 +297,126 @@ export default function ReviewPage() {
           </div>
         </div>
       </div>
+      {/*model-box */}
       <Modal
-        size="lg"
+      style={{marginTop:"100px"}}
         show={lgShow}
         onHide={() => setLgShow(false)}
         aria-labelledby="example-modal-sizes-title-lg"
       >
-        <Modal.Header closeButton>
-          <Modal.Title id="example-modal-sizes-title-lg">
-            Large Modal
-          </Modal.Title>
+        <Modal.Header style={{borderBottom:"0"}} closeButton>
+            Write a Review
         </Modal.Header>
-        <Modal.Body>...</Modal.Body>
+        <Modal.Body>
+        <div style ={{display:"flex",flexDirection: "column"}}>
+  <div  style={{display:'flex',justifyContent:"space-between"}}>
+     <div style={{lineHeight:"0"}}>
+     <label style={{color:"gray"}}>Product name</label>
+
+     <TextField
+              variant="outlined"
+              margin="normal"
+              required
+              fullWidth
+              defaultValue="iPhone XS"
+              name="password"
+              type="name"
+              id="name"
+              className="city"
+              
+            /> 
+            </div>
+            <div style={{marginLeft:"20px",lineHeight:"0" }}>
+              <label style={{color:"gray"}}>Manufacturer</label>
+            <TextField
+              variant="outlined"
+              margin="normal"
+              required
+              fullWidth
+              defaultValue="Apple Inc."
+              name="password"
+              type="name"
+              id="name"
+              className="city"
+              
+            /> 
+    </div>
+  </div>
+  </div>
+  <div style ={{display:"flex",flexDirection: "column"}}>
+  <div  style={{display:'flex',justifyContent:"space-between"}}>
+     <div style={{lineHeight:"0"}}>
+     <label style={{color:"gray"}}>Product </label>
+
+     <TextField
+              variant="outlined"
+              margin="normal"
+              required
+              width="21.4vw"
+              defaultValue="iPhone XS 128 GB"
+              name="password"
+              type="name"
+              id="name"
+              className="city"
+              
+            /> 
+            </div>
+            <div style={{marginLeft:"20px",lineHeight:"0" }}>
+              <label style={{color:"gray", fontSize:"1"}}>Purchased form</label>
+            <TextField
+              variant="outlined"
+              margin="normal"
+              required
+              fullWidth="50"
+              defaultValue="Amazon"
+              name="password"
+              type="name"
+              id="name"
+              className="city"
+              
+            /> 
+    </div>
+  </div>
+  </div>
+  <div>
+    <p style={{color:"gray"}}>Date Purchased</p>
+    <form  style={{color:"white"}} noValidate>
+      <TextField
+        id="datetime-local"
+        type="datetime-local"
+        defaultValue="2021-01-01"
+        InputLabelProps={{
+          shrink: true,
+        }}
+        style={{
+          color:"white !important",
+          borderRadius: "8px",
+          borderBottom:"0",
+          width: "45%",
+          backgroundColor: "#1437e6",}}
+      />
+    </form>
+</div>
+<div>
+    <h6 style={{textAlign:"center"}}>Don't worry! You can always change your product information</h6>
+  <Button
+                    variant="default"
+                    style={{
+                      color:"white",
+                      borderRadius: "8px",
+                      marginLeft:"250px",
+                      width: "25%",
+                      backgroundColor: "#1437e6"
+                    }}
+                  >
+                    Save & Write Review
+                  </Button>
+</div>
+        </Modal.Body>
+  
+
       </Modal>
+    </div>
     </div>
     </div>
   );

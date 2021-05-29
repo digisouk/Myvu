@@ -488,6 +488,19 @@ body {
   height: 37vw;
 }
 
+/*Review-page*/
+.MuiInput-underline:before{
+  border-bottom: 0 !important;
+}
+.modal-content{
+  width: 150% !important;
+}
+.MuiOutlinedInput-root{
+  width:21.4vw;
+}
+.city{
+  padding-top: 15px;
+}
 /*dash1*/
 h1,
 p {
